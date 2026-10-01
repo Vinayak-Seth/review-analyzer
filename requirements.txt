@@ -1,0 +1,6 @@
+groq
+pandas
+pyyaml
+python-dotenv
+pytest
+streamlit

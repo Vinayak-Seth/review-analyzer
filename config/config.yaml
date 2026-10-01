@@ -1,0 +1,12 @@
+llm:
+  provider: groq
+  model: openai/gpt-oss-20b
+  temperature: 0.2
+  max_tokens: 2000
+  max_retries: 3
+
+paths:
+  input: data/sample_reviews.csv
+  output: outputs/results.json
+  report: outputs/report.md
+  prompts: prompts/prompts.yaml

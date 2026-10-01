@@ -1,0 +1,92 @@
+[
+  {
+    "sentiment": "neutral",
+    "confidence": 0.85,
+    "aspects": [
+      {
+        "aspect": "battery",
+        "sentiment": "positive"
+      },
+      {
+        "aspect": "screen",
+        "sentiment": "negative"
+      }
+    ],
+    "summary": "Great battery life, but the screen scratches easily.",
+    "error": null,
+    "review": "Great battery life but the screen scratches really easily.",
+    "id": 1
+  },
+  {
+    "sentiment": "negative",
+    "confidence": 0.95,
+    "aspects": [
+      {
+        "aspect": "delivery",
+        "sentiment": "negative"
+      },
+      {
+        "aspect": "packaging",
+        "sentiment": "negative"
+      }
+    ],
+    "summary": "Late delivery and damaged packaging caused disappointment.",
+    "error": null,
+    "review": "Delivery was late and the packaging was damaged. Very disappointed.",
+    "id": 2
+  },
+  {
+    "sentiment": "positive",
+    "confidence": 0.95,
+    "aspects": [
+      {
+        "aspect": "value",
+        "sentiment": "positive"
+      },
+      {
+        "aspect": "price",
+        "sentiment": "positive"
+      },
+      {
+        "aspect": "sound quality",
+        "sentiment": "positive"
+      }
+    ],
+    "summary": "Excellent value and sound quality at a great price.",
+    "error": null,
+    "review": "Amazing value for the price. Sound quality is excellent.",
+    "id": 3
+  },
+  {
+    "sentiment": "neutral",
+    "confidence": 0.7,
+    "aspects": [
+      {
+        "aspect": "overall performance",
+        "sentiment": "neutral"
+      }
+    ],
+    "summary": "Does the job, but nothing special.",
+    "error": null,
+    "review": "It's okay. Does the job but nothing special.",
+    "id": 4
+  },
+  {
+    "sentiment": "positive",
+    "confidence": 0.9,
+    "aspects": [
+      {
+        "aspect": "customer support",
+        "sentiment": "positive"
+      },
+      {
+        "aspect": "charger replacement",
+        "sentiment": "positive"
+      }
+    ],
+    "summary": "Helpful support replaced faulty charger quickly.",
+    "error": null,
+    "review": "Customer support was helpful and replaced my faulty charger quickly.",
+    "id": 5
+  }
+]

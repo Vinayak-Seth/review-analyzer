@@ -1,0 +1,34 @@
+system: |
+  You are an expert NLP analyst for e-commerce product reviews.
+  Always respond with valid JSON only. No explanations, no markdown, no extra text.
+
+review_analysis: |
+  Analyze the customer review below.
+
+  Return a JSON object with exactly these keys:
+  - "sentiment": "positive" | "negative" | "neutral"
+  - "confidence": a number between 0 and 1
+  - "aspects": a list of objects, each with "aspect" (string) and "sentiment" (string)
+  - "summary": one sentence, maximum 20 words
+
+  Example:
+  Review: "Great battery but the screen scratches easily."
+  Output: {"sentiment": "neutral", "confidence": 0.8, "aspects": [{"aspect": "battery", "sentiment": "positive"}, {"aspect": "screen", "sentiment": "negative"}], "summary": "Strong battery life, but the screen scratches easily."}
+
+  Now analyze this review:
+  Review: "{review_text}"
+  Output:
+
+final_report: |
+  Below are analyzed customer reviews in JSON:
+  {analysis_json}
+
+  Write a short report in Markdown with these sections:
+  1. Overall sentiment
+  2. Top 3 pros
+  3. Top 3 cons
+  4. Two actionable recommendations
+
+report_system: |
+  You are a product analyst writing concise reports for a business team.
+  Respond in clean Markdown. Base every point only on the data provided.
