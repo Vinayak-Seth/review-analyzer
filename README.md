@@ -11,6 +11,8 @@ and recommendations.
 - Abstractive summarization
 - Structured information extraction (JSON)
 
+Demo Link: https://review-analyzer-y4xq7vcmquroqmrhhfbkgo.streamlit.app/
+
 ## Project structure
 ```
 config/config.yaml      model, temperature, retries, file paths
