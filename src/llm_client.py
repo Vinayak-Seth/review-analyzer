@@ -21,7 +21,16 @@ class LLMClient:
 
         api_key = os.getenv("API_KEY")
         if not api_key:
-            raise ValueError("API_KEY not found. Add it to your .env file.")
+            # Fallback for Streamlit Cloud, which stores keys in st.secrets
+            try:
+                import streamlit as st
+                api_key = st.secrets.get("API_KEY")
+            except Exception:
+                api_key = None
+        if not api_key:
+            raise ValueError(
+                "API_KEY not found. Add it to .env (local) or Streamlit secrets (cloud)."
+            )
 
         self.client = Groq(api_key=api_key)
 
